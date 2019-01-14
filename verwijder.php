@@ -9,7 +9,7 @@
 // validatie van de input: int?
 if(isset($_GET['reactie_id']) && filter_var($_GET['reactie_id'], FILTER_VALIDATE_INT))
 {
-    $reactie_id = filter_var($_GET['reactie_id'], FILTER_VALIDATE_INT);
+    $reactie_id = [$_GET['reactie_id']];
 
     $db = new PDO('mysql:host=localhost;dbname=reacties','pmauser','123');
 
