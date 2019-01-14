@@ -18,7 +18,7 @@
             echo "<tr><td>van <a href='mailto:" . $row["email"] . "'>" . $row["naam"] . "</a></td>
             <td>op " . $row["datum"] . "</td></tr>\n";
             echo "<tr><td colspan='2'>" . $row['reactie'] . "</td></tr>\n";
-            echo "<tr><td colspan='2'></td></tr>\n";
+            echo "<tr><td colspan='2'><a href='verwijder.php?reactie_id=" . $row["id"] . "'>Verwijder   </td></tr>\n";
             
         }
     ?>
